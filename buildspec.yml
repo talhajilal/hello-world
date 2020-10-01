@@ -28,6 +28,6 @@ phases:
       - printf '[{"name":"nodeapp","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json 
 artifacts:
-    files: 
-    - 'imagedefinitions.json'
-    - 'webapp.war'
+    files: webapp.war
+   # - 'imagedefinitions.json'
+   # - 'webapp.war'
