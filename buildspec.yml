@@ -4,6 +4,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - pwd
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
@@ -29,7 +30,7 @@ phases:
       - cat imagedefinitions.json 
 artifacts:
     files: 
-         - webapp.war
+         - webapp/src/main/webapp/webapp.war
          - imagedefinitions.json
     #webapp.war
      # - 'imagedefinitions.json'
