@@ -30,7 +30,7 @@ phases:
       - cat imagedefinitions.json 
 artifacts:
     files: 
-         - webapp/src/main/webapp/webapp.war
+         - target/webapp.war
          - imagedefinitions.json
     #webapp.war
      # - 'imagedefinitions.json'
