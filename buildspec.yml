@@ -30,4 +30,4 @@ phases:
 artifacts:
     files: 
     - 'imagedefinitions.json'
-    - 'hello-world/webapp/target/webapp.war'
+    - 'webapp.war'
